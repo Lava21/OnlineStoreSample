@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBarLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/Theme.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvToolbar"
+                android:background="@drawable/search_box"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="5dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etSearchBox"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_search"
+                    android:drawableTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint=" Cari..."
+                    android:nextFocusLeft="@id/etSearchBox"
+                    android:nextFocusUp="@id/etSearchBox"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+</FrameLayout>

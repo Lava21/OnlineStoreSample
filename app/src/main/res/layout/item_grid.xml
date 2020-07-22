@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/ivItemCard"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_cat1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvItemCard"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/ivItemCard"
+        android:text="Produk Lainnya"
+        android:textSize="20sp"/>
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="35dp"
+        android:id="@+id/vItemCard"
+        android:layout_alignParentRight="true"
+        android:background="@color/divider"/>
+</RelativeLayout>
